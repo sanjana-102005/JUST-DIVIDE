@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
     <title>Just Divide - Kid Mode</title>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.60.0/phaser.min.js"></script>
-    
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #ffeef2; /* Matches game background */
-            overflow: hidden; /* Prevents scrollbars */
-            display: flex;
-            /* FIX: Changed justify_content to justify-content */
-            justify-content: center; 
-            align-items: center;
+            background: #ffeef2;
+            font-family: "Luckiest Guy", Arial, sans-serif;
+            overflow: hidden;
+        }
+        #game-container {
+            width: 100vw;
             height: 100vh;
         }
-        
-        #game-container {
-            /* The game canvas will inject here */
-            box-shadow: 0 0 20px rgba(0,0,0,0.2); 
-        }
     </style>
+
+    <!-- Phaser 3 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
 </head>
 <body>
 
+    <!-- Game will be injected into this container -->
     <div id="game-container"></div>
 
+    <!-- Your Game Logic -->
     <script src="main.js"></script>
 
 </body>

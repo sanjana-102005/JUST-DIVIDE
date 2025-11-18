@@ -1,0 +1,10 @@
+{
+  "name": "just-divide",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve -s . -l 5000",
+    "vercel-build": "echo 'No build step required for static site'"
+  },
+  "dependencies": {}
+}
